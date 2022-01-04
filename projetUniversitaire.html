@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: white;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 0px;
+  text-align: center;
+
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  color: black;
+  <--text-align: center;-->
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: #1D1D1D;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+    <img src="Image\Banniere_Linkedin.jpg"  width=100% >
+    <div class="logo"></div>   
+</div>
+
+<div class="navbar">
+  <a href="index.html" >Home</a>
+  <a href="Formation.html">Formation</a>
+  <a href="projetUniversitaire.html" class="active" >Projets Universitaires</a>
+  <a href="projetPersonnel.html">Projets Personnels</a>
+  <a href="Stage.html">Stage</a>
+  <a href="#" > /!\ le site n'est pas prêt pour les versions téléphones   /!\</a>
+
+</div>
+
+<div class="row">
+
+  <div class="side">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Image\photoProfil.png"  width="200" height="220">
+    <br><a href="https://www.linkedin.com/in/antoine-trochu-641b14176/"><b> <h1>Me contacter </h1></b></a>
+    
+    <h3><b><u>Compétences Techniques :</u></b></h3>
+
+      <b> Programmation :</b>
+
+      <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Language C, C++,C#
+      
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Unity
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Arduino
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - VHDL
+
+      <br><br><b> Modélisation 3D :</b>
+
+      <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Blender
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - substance Painter (textures)
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Catia V5 (modelisation, dessin, assemblage)
+
+       <br><br><b>Logiciels vus en stage ou pendant des projets : </b>
+      
+      <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - IC.IDO
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - 3dsMax
+
+    <h3><b><u>Informations Importantes :</u></b></h3>
+
+       <b> Langues :</b>
+    <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Anglais : Toeic avec 905 points (juin 2019)
+    <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Espagnol : niveau Terminal  
+    <br><br>   <b> Déplacements :</b>
+     <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  Permis B
+
+     
+
+
+
+
+
+  </div>
+
+
+  <div class="main">
+   
+    <h2><u>Projet Codage Unity </u></h2>
+    <br>
+
+    <img src="Image\Runner_Screenshot.png"   class="center">
+
+    <p> 
+        Ce projet à été réalisé à l'ENSAM pendant mon année de Master 2. La durée du projet était de 1 semaine, 
+        l'objectif était de créer un jeu en se servant de toutes les bases de Programmation apprises pendant les cours.
+        j'ai choisi de recréer un jeu similaire au jeu mobile " Subway surfer". l'objectif est de courir le plus longtemps
+        possible en evitant les voitures qui arrivent en face du joueur. l'aspect graphique du projet n'etant pas noté pendant 
+        l'evaluation du projet, elle pourrait etre retravaillé ulterieurement. 
+     
+    </p>
+
+    <h2><u>Projet Programmation Microcontrôleur </u></h2>
+    <br>
+
+    <p> 
+        Ce projet à été réalisé à l'IMA Pendant mon année de Master 1. L'objectif de ce projet universitaire etait de voir
+        quelles sont les posssibilités d'une carte éléctronique de la marque RENESAS. Mon travail était de réaliser une Interface Homme Machine
+        avec l'ecran tactile de la carte pour pouvoir piloter des menus et des fonctionnalités tels que l'allumage de led ou la modification de parametres.
+ 
+
+    </p>
+
+
+
+
+    <h2><u>Projet Réalité Virtuelle </u></h2>
+    <br>
+
+    <img src="Image\Projet_VR_IMA.png"   class="center">
+
+     <p> 
+        Ce projet à été réalisé à l'IMA Pendant mon année de Licence 3. L'objectif de ce projet universitaire etait réaliser un démonstrateur 
+        permettant aux nouveaux utilisateur du logiciel IC.IDO de prendre en main le logiciel. les points principaux etaient le deplacement, 
+        au sol et en volant, ainsi que les interactions avec des objets. Nous nous sommes servi du logiciel IC.IDO pour l'application et CATIA pour les modélisations 3D simples. 
+
+    </p>
+
+
+  </div>
+</div>
+
+<div class="footer">
+  <h2><br><a href="https://www.linkedin.com/in/antoine-trochu-641b14176/"><b> Me contacter</b></a></h2>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: white;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 0px;
+  text-align: center;
+
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  background-color: #f1f1f1;
+  color: black;
+  padding: 20px;
+  <--text-align: center;-->
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+  background-color: #1D1D1D;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+    <img src="Image\Banniere_Linkedin.jpg"  width=100% >
+    <div class="logo"></div>   
+</div>
+
+<div class="navbar">
+  <a href="index.html" >Home</a>
+  <a href="Formation.html"class="active">Formation</a>
+  <a href="projetUniversitaire.html">Projets Universitaires</a>
+  <a href="projetPersonnel.html">Projets Personnels</a>
+  <a href="Stage.html">Stage</a>
+  <a href="#" > /!\ le site n'est pas prêt pour les versions téléphones  /!\</a>
+
+</div>
+
+<div class="row">
+
+  <div class="side">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Image\photoProfil.png"  width="200" height="220">
+    <br><a href="https://www.linkedin.com/in/antoine-trochu-641b14176/"><b> <h1>Me contacter </h1></b></a>
+    
+    <h3><b><u>Compétences Techniques :</u></b></h3>
+
+      <b> Programmation :</b>
+
+      <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Language C, C++,C#
+      
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Unity
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Arduino
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - VHDL
+
+      <br><br><b> Modélisation 3D :</b>
+
+      <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Blender
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - substance Painter (textures)
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Catia V5 (modelisation, dessin, assemblage)
+
+       <br><br><b>Logiciels vus en stage ou pendant des projets : </b>
+      
+      <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - IC.IDO
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - 3dsMax
+
+    <h3><b><u>Informations Importantes :</u></b></h3>
+
+       <b> Langues :</b>
+    <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Anglais : Toeic avec 905 points (juin 2019)
+    <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Espagnol : niveau Terminal  
+    <br><br>   <b> Déplacements :</b>
+     <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  Permis B
+
+     
+
+
+
+
+
+  </div>
+
+
+  <div class="main">
+    <h2><u>Formation Actuelle</u></h2>
+    <br>
+    <img src="Image\Logo_ENSAM.png"   class="center" width: 80%; height: 80%; >
+    <p> <b>2020 - 2022</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <b>Master MTI3D </b> à l'école Nationale superieure d'arts et métiers à Laval (53) </p>
+
+    <br>
+    <h2><u>Formation </u></h2>
+    <br>
+
+
+    <b>8-9 nov. 2021 </b> Formation Hololens 2 dans les locaux de <b> Microsoft France  </b>
+
+
+    <img src="Image\Logo_IMA.png"   class="center">
+    <p> <b>2018 - 2020</b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+    
+     <b>Master CMI IMSAT Spécialité Systèmes Embarqués </b> à l’institut EVERING   (ex-IMA) à Mérignac (33)
+    </p>
+
+    <p> <b>2015 - 2018</b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+    
+     <b>Licence CMI Imsat spécialité Maintenance Avionique</b> à l’institut de maintenance aéronautique à Mérignac 
+    </p>
+    <p> <b>Janvier - Juin 2017</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+    
+    Six mois d'<b>échange universitaire</b> à l’École Nationale D’Aérotechnique – <b>Montréal</b>  (Canada)
+    </p>
+
+    <br>
+
+    <p> <b>Juin 2015</b>	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+    
+    Bac Général série  Scientifique mention Bien
+    </p>
+
+    <p> <b>Juin 2012</b>	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+    Obtention du Diplôme National  du Brevet des Collèges : Mention Bien
+		               <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       Obtention du Brevet d’Initiation à l’Aéronautique « BIA »
+    </p>
+
+
+  </div>
+</div>
+
+<div class="footer">
+  <h2><br><a href="https://www.linkedin.com/in/antoine-trochu-641b14176/"><b> Me contacter</b></a></h2>
+</div>
+
+</body>
+</html>

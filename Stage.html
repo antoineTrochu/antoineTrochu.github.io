@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: white;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+.ratio50 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.ratio70 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 0px;
+  text-align: center;
+
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  color: black;
+  <--text-align: center;-->
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: #1D1D1D;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+    <img src="Image\Banniere_Linkedin.jpg"  width=100% >
+    <div class="logo"></div>   
+</div>
+
+<div class="navbar">
+  <a href="index.html" >Home</a>
+  <a href="Formation.html">Formation</a>
+  <a href="projetUniversitaire.html">Projets Universitaires</a>
+  <a href="projetPersonnel.html">Projets Personnels</a>
+  <a href="Stage.html"class="active">Stage</a>
+  <a href="#" > /!\ le site n'est pas prêt pour les versions téléphones   /!\</a>
+
+</div>
+
+<div class="row">
+
+  <div class="side">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Image\photoProfil.png"  width="200" height="220">
+    <br><a href="https://www.linkedin.com/in/antoine-trochu-641b14176/"><b> <h1>Me contacter </h1></b></a>
+    
+    <h3><b><u>Compétences Techniques :</u></b></h3>
+
+      <b> Programmation :</b>
+
+      <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Language C, C++,C#
+      
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Unity
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Arduino
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - VHDL
+
+      <br><br><b> Modélisation 3D :</b>
+
+      <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Blender
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - substance Painter (textures)
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Catia V5 (modelisation, dessin, assemblage)
+
+       <br><br><b>Logiciels vus en stage ou pendant des projets : </b>
+      
+      <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - IC.IDO
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - 3dsMax
+
+    <h3><b><u>Informations Importantes :</u></b></h3>
+
+       <b> Langues :</b>
+    <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Anglais : Toeic avec 905 points (juin 2019)
+    <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Espagnol : niveau Terminal  
+    <br><br>   <b> Déplacements :</b>
+     <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  Permis B
+
+     
+
+
+
+
+
+  </div>
+
+
+
+
+  <div class="main">
+    <h2><u>Mai – Août 2021 Réalisation d’une plateforme Stabilométrique </u></h2>
+    <br>
+    <p>
+    Au sein de l’entreprise Genourob à Laval (53) pour une durée de 4 mois, 
+    J’ai pu réaliser pour eux un prototype de Plateforme Stabilométrique. C’est un dispositif qui permet de 
+    connaitre la répartition de la masse d’un utilisateur sur ses pieds pour savoir si son équilibre est bon.
+    J’ai pu mener ce projet de la sélection des capteurs jusqu’à la réalisation d’une application Unity permettant
+    de visualiser les résultats en passant par le prototype lui-même fait sous Arduino. Voici le prototype final : 
+
+    </p>
+
+    <img src="Image\prototype_Genourob.jpg"   class="center" >
+    <br>
+    <p>
+    En parallèle de cette tâche, j’ai pu travailler sur la refonte graphique de leur application. 
+    J’ai produit pour eux des assets visuels dont voici quelques exemples : 
+    </p>
+
+     <img src="Image\ProceduralRoad.png"   class="ratio50" >
+     <img src="Image\SailBoat.png"   class="ratio50" >
+
+     <br><br>
+
+
+    <h2><u>Mars – Août 2020 Réalisation d’un POC pour le secteur de la défense  </u></h2>
+        <br>
+        <p>
+            Intégré à une équipe de Recherche et développement de l’entreprise Sopra Steria à Mérignac (33) pour une durée de 6 mois,
+            Mon travail a été de réaliser un POC (Proof of Concept) pour démontrer le fonctionnement de leur application. 
+            Due à la situation sanitaire complexe pendant une grande partie de mon stage, ma mission à été réorienté sur la 
+            mise à jour du travail de mon prédécesseur avec les nouveaux outils disponibles dans leur logiciel de simulation. 
+            J’ai donc pu mettre en place des moyens de communications entre l’intérieur du logiciel de simulation est une 
+            application Java au travers d’un Serveur Local. Ceci permettant l’échange de données entre les différentes applications.
+            Voici un schéma du Pipeline mis en place :    
+
+        </p>
+
+        <img src="Image\pipelineSopra.png"   class="ratio70" >
+
+         <br><br>
+
+
+    <h2><u>Juin – Juillet 2019 Implémentation VHDL sur carte Callisto   </u></h2>
+        <br>
+        <p>
+            Pendant mon Master 1, j’ai eu la possibilité de faire un Stage de 8 semaines dans le laboratoire IMS à Bordeaux.
+            Mon travail était d’implémenter en VHDL sur une carte de test, des modules permettant de tester différents composant 
+            permettant gérer un réseau de neurones à synapses Memristives. Les différentes compétences que j’ai pu mettre en œuvre 
+            pendant ce stage sont : la compréhension de Datasheet, la mise en place de machine d’états, l’implémentation 
+            des modules VHDL correspondant, et le test de ces modules sur une carte de test.     
+
+        </p>
+
+        <img src="Image\carteXilinx.png"   class="ratio70" >
+
+         <br><br>
+
+
+    <h2><u>Juin – Juillet 2018 Création de notice de démontage en Réalité Virtuelle pour un turbomoteur  </u></h2>
+        <br>
+        <p>
+            Après un projet universitaire sur le thème de la réalité virtuelle, j’ai souhaité continuer sur un Stage 
+            au sein de l’université pour pouvoir continuer à travailler avec cette technologie. Pendant ce stage de 7 semaines, 
+            l’objectif était de réaliser une formation au démontage d’un turbomoteur dans un logiciel de Visualisation en 
+            Réalité Virtuelle, IC.IDO. Dans un premier temps, j’ai dû comprendre les opérations de démontage, ainsi que les 
+            outils utilisés pour ensuite les reconstruire étape par étape dans la simulation pour pouvoir créer cette formation. 
+            Voici un exemple de documentation disponible :     
+
+        </p>
+
+        <img src="Image\Dgen_notice2.png"   class="ratio70" >
+
+         <br><br>
+         <p>
+         Ainsi que sa reconstruction en Réalité Virtuelle : 
+         </p>
+         <img src="Image\Dgen_Immersion.png"   class="ratio70" >
+
+         <br><br>
+
+    <h2><u>Décembre 2017 – Janvier 2018 Stagiaire au sein du groupement d’intervention des forces aériennes 
+            de la gendarmerie à Cazaux (33).   </u></h2>
+        <br>
+        <p>
+            J’ai été intégré à ce groupement pendant une durée de 4 semaines, pendant laquelle j’ai pu découvrir 
+            le monde de la maintenance des hélicoptères, j’ai eu la possibilité d’aider lors de phase maintenance 
+            des différents appareils. 
+
+        </p>
+
+
+    
+
+  </div>
+</div>
+
+<div class="footer">
+  <h2><br><a href="https://www.linkedin.com/in/antoine-trochu-641b14176/"><b> Me contacter</b></a></h2>
+</div>
+
+</body>
+</html>
